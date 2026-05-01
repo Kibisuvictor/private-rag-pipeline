@@ -1,0 +1,161 @@
+# =============================================================================
+# RAG Pipeline — .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Project-specific
+# -----------------------------------------------------------------------------
+
+# ChromaDB vector store — large binary files, rebuilt by running ingest.py
+chroma_db/
+
+# Documents folder — keep personal/private PDFs out of the repo
+# Add sample docs to data/samples/ if you want to include examples
+data/
+!data/.gitkeep
+!data/samples/
+
+# MLflow runs (if added later)
+mlruns/
+mlflow.db
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Byte-compiled / optimised
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+wheels/
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Type checker
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyright/
+
+# Linter
+.ruff_cache/
+
+# -----------------------------------------------------------------------------
+# Environment & secrets
+# -----------------------------------------------------------------------------
+
+.env
+.env.local
+.env.*.local
+*.env
+secrets.yaml
+secrets.json
+
+# -----------------------------------------------------------------------------
+# Jupyter notebooks
+# -----------------------------------------------------------------------------
+
+.ipynb_checkpoints/
+*.ipynb
+
+# If you want to track notebooks, remove the line above and use:
+# nbstripout to strip outputs before committing
+
+# -----------------------------------------------------------------------------
+# OS files
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# -----------------------------------------------------------------------------
+# IDEs and editors
+# -----------------------------------------------------------------------------
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Neovim
+*.swp
+*.swo
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+Session.vim
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# -----------------------------------------------------------------------------
+# Logs and temp files
+# -----------------------------------------------------------------------------
+
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+tmp/
+temp/
+logs/
+
+# -----------------------------------------------------------------------------
+# Docker (for future Cloud Run deployment)
+# -----------------------------------------------------------------------------
+
+.docker/
+
+# -----------------------------------------------------------------------------
+# DVC (if you add data versioning later)
+# -----------------------------------------------------------------------------
+
+/tmp
