@@ -138,3 +138,5 @@ xxhash==3.7.0
 yarl==1.23.0
 zipp==3.23.1
 zstandard==0.25.0
+pytest==8.1.1
+ruff==0.3.4
